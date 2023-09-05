@@ -1,0 +1,180 @@
+body {
+  height: 30%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  position: relative;
+}
+.card {
+  position: absolute;
+  background-color: #040d12;
+  width: 100%;
+  height: 300px;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 6;
+}
+.form {
+  position: absolute;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  background-color: #183d3d;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 250px;
+  z-index: -2;
+}
+.items {
+  padding: 5px;
+}
+.input {
+  font-family: fantasy;
+  border: #040d12 dotted 3px;
+  text-align: center;
+}
+.btn {
+  font-family: fantasy;
+  border-radius: 20px;
+  padding: 2px 5px 2px 5px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: aliceblue;
+  color: #183d3d;
+  padding: 10px;
+}
+.last {
+  background-color: #5c8374;
+  position: absolute;
+  width: 100%;
+  height: 23.8vh;
+  margin-top: 520px;
+  padding-top: 2rem;
+  z-index: -3;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.list {
+  text-align: center;
+  font-size: larger;
+  justify-content: center;
+}
+.img {
+  /* display: none; */
+  position: absolute;
+  width: 300px;
+  height: 245.098px;
+}
+
+/* weather app card */
+.status {
+  /* display: none; */
+  color: #83caf2;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 20%;
+}
+.temp {
+  display: inline;
+  color: #5be64e;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 20%;
+}
+.humidity {
+  display: inline;
+  color: #5be64e;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 20%;
+}
+.location {
+  position: absolute;
+  color: rgba(181, 198, 212, 0.356);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 8vw;
+  margin-top: 27vh;
+}
+.date {
+  position: absolute;
+  color: rgba(181, 198, 212, 0.356);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 8vw;
+  margin-top: 30vh;
+}
+/* history container card*/
+
+.history--container {
+  /* display: none; */
+  flex-direction: column;
+  position: absolute;
+  background-color: #000212;
+  width: 58%;
+  height: 80%;
+  right: 1.5rem;
+  top: 2rem;
+  border-radius: 20px;
+  grid-row: 2 / span 3;
+  border-radius: 1rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  align-items: center;
+}
+.history--row--container {
+  display: inline-flex;
+  position: absolute;
+}
+.history--row {
+  background-color: #8ad4b7;
+  width: 98%;
+  height: 5rem;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1px;
+}
+.history--container::-webkit-scrollbar {
+  display: none;
+}
+.history--row--temp {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  padding: 5px;
+  margin-right: 50px;
+}
+.history--row--humidity {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  padding: 5px;
+  margin-right: 50px;
+}
+.dates_time {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+}
+/* recents */
+
+.recent {
+  border-radius: 20px;
+  background-color: #183d3d;
+  color: aliceblue;
+  padding: 2px 5px 2px 5px;
+  transition: 0.5s;
+}
+.recent:hover {
+  background-color: aliceblue;
+  color: #183d3d;
+  padding: 8px;
+}
